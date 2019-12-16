@@ -1,0 +1,44 @@
+<form method = "POST" class = "inscription" >
+            <br>
+            <label for = "login"> Choisissez un pseudo : </label>
+            <br>
+            <input type = "text" name = "login" id="login"/>
+            <br>
+            
+            <label for = "mail"> Saisissez votre e-mail d'inscription : </label>
+            <br>
+            <input type = "email" onpaste = "return false" name = "mail" id="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$"/>
+            <br>
+            
+            <label for = "mail2"> Confirmez votre e-mail : </label>
+            <br>
+            <input type = "email" onpaste = "return false" name = "mail2" id="mail2" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$"/>
+            <br>
+            
+            <label for = "pass"> Saisissez un mot de passe : </label>
+            <br>
+            <input type = "password" onpaste = "return false"  name = "pass" id="pass" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$"/>
+            <br>
+            
+            <label for = "pass2"> Confirmez le mot de passe : </label>
+            <br>
+            <input type = "password" onpaste = "return false" name = "pass2" id="pass2"/>
+            <br>
+            
+            <input type = "submit" name = "inscription" value = "S'INSCRIRE"/>
+            <br>
+        </form>
+
+        <form  method ="POST" class ="formulaire_connexion" >
+            <label for = "identifiant">Saisir l'identifiant :</label> 
+            <br>
+            <input type = "text" name = "login_connexion" id ="identifiant"/>
+            
+            <br>
+            <label for = "password">Saisir le mot de passe :</label>  
+            <br>
+            <input type = "password" name = "motdepasse_connexion"/>
+              
+            <br>
+            <input type = "submit" name = "connexion"/>
+        </form>

@@ -17,15 +17,48 @@ form{
     width:80vw;
     height:50vh;
     border:1px solid black;
-
+    margin:5px;
+    padding: 5px;
     display: flex;
     flex-direction:column; 
     overflow: scroll;
 }
+
+.formulaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self:center;
+}
+
+.inscription, .contribution, .formulaire_connexion{
+    border: 1px dotted black;
+    margin: 2px;    
+    padding: 5px;
+    justify-content: center;
+
+}
+
+.bloc_form{
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+   
+}
+
 
 /* ----  ELEMENTS   ---- */
 
 #message{
     width:30vw;
     height:20vh;
+}
+
+/* ----  ETATS   ---- */
+
+.hide{
+    display: none;
+}
+.visible{
+    display: inherit;
 }
